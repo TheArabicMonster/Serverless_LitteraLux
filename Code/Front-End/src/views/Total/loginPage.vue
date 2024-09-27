@@ -1,5 +1,5 @@
 <script>
-/*import axios from 'axios'
+import axios from 'axios'
 export default {
     components: {
 
@@ -10,24 +10,24 @@ export default {
         }
 
     },
-    mounted() {
-
-    },
     methods: {
-        /*async Connexion(event) {
+        async Connexion(event) {
             event.preventDefault() // Empêche le formulaire de se soumettre normalement
-            try {
+            try 
+            {
                 const response = await axios.post(`http://localhost:3000/api/login`, {
                     pseudo: this.username,
                     motDePasse: this.password
                 })
-                console.log("response :" response)
-            } catch (error) {
-                console.log("error :"  error)
+                console.log("response :", response)
+            } 
+            catch (error) 
+            {
+                console.error(error)
             }
         }
     }
-}*/
+}
 </script>
 
 <template>

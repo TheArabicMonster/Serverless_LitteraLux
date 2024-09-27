@@ -4,8 +4,6 @@
     <div class="livre" v-for="livre in livres" :key="livre.idLivre">
       <img :src="livre.imageCouverture" :alt="livre.titre" />
       <h2>{{ livre.titre }}</h2>
-      <p>{{ findAuthor(livre.idAuteur).nom }}</p>
-      <p>{{ findUser(livre.idUser).nom }}</p>
     </div>
   </div>
 </template>
@@ -25,10 +23,11 @@ export default {
   methods: {
     findAuthor(idAuteur) {
       return this.authors.find(author => author.idAuteur === idAuteur);
-    },
-    findUser(idUser) {
-      return this.users.find(user => user.idUser === idUser);
     }
+    // ,
+    // findUser(idUser) {
+    //   return this.users.find(user => user.idUser === idUser);
+    // }
   },
   mounted() {
     // Effectuer une requête GET pour récupérer la liste des livres depuis ton API

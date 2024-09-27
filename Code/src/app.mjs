@@ -23,7 +23,7 @@ sequelize
         console.log("La connexion à la base de données a bien été établie")
     )
     .catch((error) => console.error("Impossible de se connecter à la DB"));
- //  initDb();
+    initDb();
 
 app.get("/api/", (req, res) => {
     res.redirect(`http://localhost:${port}/`);

@@ -25,7 +25,7 @@ const sequelize = new Sequelize(
   "root", // Mot de passe de l'utilisateur
   {
     host: "localhost",
-    port: "6033",// pour les conteneurs docker MySQL
+    port: "3306",// pour les conteneurs docker MySQL
     dialect: "mysql",
     logging: false,
   }

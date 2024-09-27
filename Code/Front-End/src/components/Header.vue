@@ -6,6 +6,8 @@
             <nav>
                 <RouterLink to="/">Accueil</RouterLink>
                 <RouterLink to="/books">Livres</RouterLink>
+                <RouterLink to="/DetailsLivre">Détails</RouterLink>
+                <RouterLink to="/addLivre">Ajouter un livre</RouterLink>
             </nav>
         </div>
 
